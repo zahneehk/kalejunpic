@@ -71,13 +71,13 @@ const onNavClick = (e: any) => {
   if (path === '/management') {
     if (userConfigInfo.repo === '') {
       ElMessage.warning(i18n.global.t('upload_page.message2'))
-      router.push('/config')
+      router.push('/upload')
       return
     }
 
     if (userConfigInfo.selectedDir === '') {
       ElMessage.warning(i18n.global.t('upload_page.message3'))
-      router.push('/config')
+      router.push('/upload')
       return
     }
   }
